@@ -1,0 +1,309 @@
+html * {
+  font-family: "Lato";
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --blue: #627c8d;
+  --skyblue: #b7e1f2;
+  --red: #a73838;
+  --green: #739c7e;
+  --mediumgreen: #577560;
+  --darkgreen: #28362b;
+  --white: #f2f2f2;
+  --gray: #c0bfbf;
+  --gray-dark: #747474;
+  --dark: #272626;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+.emphasis_p {
+  font-family: "Libre Baskerville", Times, serif;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--blue);
+  padding-top: 2%;
+  padding-bottom: 0;
+
+  /* to try out these combinations */
+  /* a */
+  /* font-style:italic;
+
+    /* b */
+  /* font-weight: bold*/
+}
+
+h2 {
+  margin: 0;
+}
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding: 2% 0;
+}
+.credit {
+  font-family: "Libre Baskerville", Times, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 12px;
+  position: relative;
+  bottom: -94%;
+  right: 2vh;
+}
+
+/* Navbar CSS */
+#navbar {
+  left: 0;
+  right: 0;
+  background-color: var(--dark);
+  position: fixed;
+  transition: top 0.5s;
+  z-index: 0;
+  top: 0;
+}
+
+.nav-bar ul {
+  display: grid;
+  color: var(--white);
+  margin: 0;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 50px;
+  padding-inline-start: 0;
+  align-content: space-between;
+  align-items: center;
+}
+.nav-bar li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.nav-bar #menu {
+  grid-column: 1/2;
+  text-align: left;
+}
+
+#menu_bttn {
+  padding-left: 10px;
+}
+
+.nav-bar #logo {
+  grid-column: 2/3;
+}
+#logo img {
+  width: 200px;
+}
+.nav-bar #item3 {
+  grid-column: 3/4;
+}
+
+/* Container and overall - Content CSS */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 80px;
+  text-align: left;
+  padding: 5dvh;
+  height: 100%;
+  column-gap: 15vh;
+}
+
+.wide_container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  margin-top: 80px;
+  text-align: left;
+  padding: 5dvh;
+  height: 100%;
+}
+
+.content {
+  grid-column: 1/2;
+  height: 100%;
+  position: relative;
+  top: 10vh;
+}
+
+.wide_content {
+  grid-column: 1/4;
+  height: 100%;
+  position: relative;
+}
+
+.center_container {
+  text-align: center;
+  padding: 5dvh;
+  height: 60vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.center_container p {
+  text-align: center;
+}
+
+.center_p {
+  width: 55vw;
+  align-content: center;
+}
+.main_p {
+  text-align: left;
+  /* width:50%; */
+}
+
+.image_box {
+  grid-column: 2/4;
+  height: 75vh;
+  /* reminder to change size based on viewport width */
+}
+
+.sm_image_box {
+  grid-column: 4/6;
+  height: 75vh;
+}
+
+/* intro */
+
+#introduction {
+  height: 75vh;
+}
+
+#cover {
+  position: relative;
+  /* height:75vh; */
+  /* width:50%; */
+  /* text-align:right; */
+  /* display:flex; */
+  top: 10vh;
+  justify-content: right;
+}
+
+.theme_img img {
+  position: absolute;
+  height: 65vh;
+  left: 5vw;
+}
+#hand {
+  z-index: 3;
+}
+
+#house {
+  z-index: 2;
+}
+
+#bg {
+  z-index: 1;
+}
+
+/* welcome to richmond */
+#richmond_container {
+  background-color: var(--gray);
+  height: 80vh;
+}
+#richmond {
+  position: relative;
+  top: 15vh;
+}
+
+#richmond_image {
+  position: relative;
+  left: 5vw;
+  top: 10vh;
+}
+
+/* richmond disparity living */
+#notthesame {
+  position: relative;
+  top: 15vh;
+}
+
+/* How did we get here - Zoning */
+#map_container {
+  height: 100%;
+  width: 100%;
+}
+#zoning_map {
+  height: 68vh;
+  width: 100%;
+  border: 0;
+}
+
+/* Different Realities: Median Household Income */
+#diff_real {
+  top: 0;
+}
+
+/* Why are there still issues in housing? */
+#dev_cost {
+  width: 70%;
+  position: relative;
+  left: 8vw;
+  top: -8vh;
+}
+
+/* conclusion */
+#full_house {
+  height: 100%;
+}
+.popup {
+  display: flex;
+  padding: 20px;
+  background-color: var(--gray-dark);
+  color: var(--white);
+  font-weight: 100;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.popup:target {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup > .close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: var(--dark);
+  color: var(--gray);
+  padding: 4px 10px;
+}
+
+/* footnote */
+
+body {
+  counter-reset: footnotes;
+}
+
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+  font-style: italic;
+}
+a[aria-describedby="footnote-label"]::after {
+  content: "[" counter(footnotes) "]"; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: var(--blue); /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
