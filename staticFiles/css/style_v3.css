@@ -139,15 +139,14 @@ a {
 }
 .content_narrow p {
   text-align: justify;
+  text-align-last: left;
 }
 .image_box_med {
   grid-column: 2/3;
   height: 100%;
   width: 100%;
 }
-.image_box_med p {
-  width: 80%;
-}
+
 /* center sections */
 .center_section {
   text-align: center;
@@ -199,6 +198,7 @@ a {
   align-items: center;
 }
 .nav-bar li {
+  font-family: "Lato", sans-serif;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -255,6 +255,7 @@ a {
 }
 
 .nav-bar li a {
+  font-family: "Lato", sans-serif;
   position: relative;
   top: 25%;
   text-decoration: none;
@@ -360,6 +361,30 @@ a {
   margin: 0;
 }
 
+/* Eviction */
+.evc_section_narrow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  text-align: justify;
+  padding: 50px;
+  height: fit-content;
+  column-gap: 5vw;
+}
+
+/* .evccontent_narrow {
+  grid-column: 1/2;
+  height: 100%;
+}
+.content_narrow p {
+  text-align: justify;
+}
+.image_box_med {
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+} */
+
+
 /* How did we get here? Let's Go Back in Time */
 #history h1 {
   text-align: center;
@@ -437,9 +462,9 @@ a {
   left: -244px;
 }
 
-#w5 {
-  top: 685px;
-  left: -63px;
+#w5{
+  top:685px;
+  left:-62.5px;
 }
 
 .decor {

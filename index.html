@@ -15,11 +15,11 @@
   <title>Visualizing the Housing Crisis</title>
 
   <!-- fonts style -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="staticFiles/css/style_v3.css" rel="stylesheet" />
@@ -99,8 +99,8 @@
             is complex, but this is a great place to get started.</span>
           Understanding the legacy of the past will help contextualize the
           present, and work towards a more just future. We hope you'll come
-          away with an understanding of the affordable housing crisis by exploring
-          this case study of Richmond, CA.
+          away with an understanding of the affordable housing crisis by
+          exploring this case study of Richmond, CA.
         </p>
       </div>
     </div>
@@ -174,15 +174,17 @@
         greater resources in virtually every statistic we are able to
         measure.”
       </p>
+      <div class="blank_sm"></div>
       <div style="display: flex; justify-content: center">
         <img src="staticFiles\images\disparity\Disparate Impacts Viz.svg" />
       </div>
-      <br />
+      <div class="blank_sm"></div>
       <p>
         However, residence in single family zones break sharply on racial
         lines. White residents are more likely to live in single-family zones,
         while Black residents are more likely to reside in multifamily zones.
       </p>
+      <div class="blank_sm"></div>
       <img src="staticFiles\images\living_richmond_not_same\sfr_vs_mft.svg" style="width: 100%" />
       <!-- <div class="image_box_med">
         <div class="blank_sm"></div>
@@ -199,7 +201,7 @@
       </div> -->
 
       <!-- Renting vs. Owning: Building Generational Wealth -->
-      <div class="blank_sm"></div>
+      <div class="blank"></div>
       <h3>Who owns homes in Richmond?</h3>
       <p>
         Homeownership is one of the primary methods for building generational
@@ -237,7 +239,7 @@
         var divElement = document.getElementById("viz1683257775144");
         var vizElement = divElement.getElementsByTagName("object")[0];
         vizElement.style.width = "100%";
-        vizElement.style.height = "200px";
+        vizElement.style.height = "250px";
         var scriptElement = document.createElement("script");
         scriptElement.src =
           "https://public.tableau.com/javascripts/api/viz_v1.js";
@@ -270,23 +272,8 @@
         represents the overall trend.
       </p>
       <br />
-      <div class="section_narrow" style="padding: 0; column-gap: 2vw">
+      <div class="evc_section_narrow" style="padding: 0; column-gap: 2vw">
         <div class="content_narrow">
-          <br />
-          <br />
-          <p style="width: 100%; text-align: left">
-            This map shows neighborhoods with the highest levels of recorded
-            evictions:
-            <span class="emphasis_red">the Iron Triangle,
-              Panhandle, and Hilltop.</span>
-            These neighborhoods are predominantly Black and Hispanic. The
-            current housing landscape places the vulnerable - who are often
-            racial minorities - in precarious situations rather than support
-            them.
-          </p>
-        </div>
-
-        <div class="image_box_med">
           <div class="tableauPlaceholder" id="viz1683249159917" style="position: relative">
             <noscript><a href="#"><img alt="Majority Race by Tract (2021) versus Evictions  (Jan 2017- Mar 2022) "
                   src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1_rss.png"
@@ -318,7 +305,21 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
           </script>
         </div>
+        <div class="image_box_med">
+          <p style="text-align: left">
+            This map shows neighborhoods with the highest levels of recorded
+            evictions:
+            <span style="color: var(--blue); font-weight: bold">the Iron Triangle</span>,
+            <span style="font-weight: bold">Panhandle, and Hilltop.</span>
+            These neighborhoods are predominantly Black and Hispanic. The
+            current housing landscape places the vulnerable - who are often
+            racial minorities - in precarious situations rather than support
+            them.
+          </p>
+        </div>
       </div>
+      <br />
+      <br />
       <br />
       <p>
         While eviction moratoria during the COVID-19 pandemic reduced overall
@@ -328,45 +329,43 @@
         In 2021, there were 3.5 Black evictions and 4 Hispanic eviction for
         every White eviction.
       </p>
-
-      <div class="section_narrow" style="padding: 0; column-gap: 2vw">
-        <div class="content_narrow">
-          <img src="staticFiles\images\eviction_map\eviction_rate_iso.svg" style="width: 98%" />
+      <br />
+      <img src="staticFiles\images\eviction_map\eviction_rate_iso.svg"
+        style="width: 60%; position: relative; left: 22.5%" />
+      <div class="content_center" style="padding-top:10px;">
+        <div class="tableauPlaceholder" id="viz1683250275111" style="position: relative">
+          <noscript><a href="#"><img alt="Yearly evictions in Richmond, CA by race (Jan. 2017 - Mar. 2022) "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1_rss.png"
+                style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="evictionovertime&#47;Sheet2" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1.png" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
         </div>
-        <div class="image_box_med" style="text-align: left">
-          <div class="tableauPlaceholder" id="viz1683250275111" style="position: relative">
-            <noscript><a href="#"><img alt="Yearly evictions in Richmond, CA by race (Jan. 2017 - Mar. 2022) "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1_rss.png"
-                  style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param name="name" value="evictionovertime&#47;Sheet2" />
-              <param name="tabs" value="no" />
-              <param name="toolbar" value="yes" />
-              <param name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1.png" />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-              <param name="filter" value="publish=yes" />
-            </object>
-          </div>
-          <script type="text/javascript">
-            var divElement = document.getElementById("viz1683250275111");
-            var vizElement = divElement.getElementsByTagName("object")[0];
-            vizElement.style.width = "100%";
-            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-            var scriptElement = document.createElement("script");
-            scriptElement.src =
-              "https://public.tableau.com/javascripts/api/viz_v1.js";
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1683250275111");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
       </div>
+
       <br />
       <p class="emphasis_p">
         All of these factors are tied with financial instability and housing
@@ -428,7 +427,6 @@
       </p>
     </div>
   </div>
-
 
   <!-- <div class="section_wide">
       <div class="content_wide">
@@ -505,14 +503,14 @@
 
       <img src="staticFiles\images\issues_today\local_gov.svg" style="width: 100%" />
       <p>
-        The trend that Contra Costa County exhibits here
-        of disproportionally under-developing housing planned for very low and
-        low income households mirrors the rest of the Bay Area. The
-        Association of Bay Area Governments (ABAG), sets goals for housing
-        developments based on population growth and housing needs. Between
-        2007 and 2014, the Great Recession affected the ability to finance
-        affordable housing, and was further impacted by an overall decrease in
-        funding from state and federal sources.
+        The trend that Contra Costa County exhibits here of disproportionally
+        under-developing housing planned for very low and low income
+        households mirrors the rest of the Bay Area. The Association of Bay
+        Area Governments (ABAG), sets goals for housing developments based on
+        population growth and housing needs. Between 2007 and 2014, the Great
+        Recession affected the ability to finance affordable housing, and was
+        further impacted by an overall decrease in funding from state and
+        federal sources.
       </p>
 
       <h3>Community</h3>
@@ -625,20 +623,16 @@
         might look like. Becoming an informed citizen leads to informed
         action—action that can make a difference. 
       </p>
+
       <p>
-        Thank you for allowing us to educate you on the housing crisis. A
-        future of affordable housing is possible through action— we hope you
+        Thank you for allowing us to educate you on the housing crisis. If you
+        are feeling empowered and ready to do more, we’ve compiled a list of
+        next steps.
+      </p>
+      <p>
+        A future of affordable housing is possible through action— we hope you
         continue your journey.
       </p>
-      <!-- <p>
-          Thank you for allowing us to educate you on the housing crisis. If you
-          are feeling empowered and ready to do more, we’ve compiled a list of
-          next steps.
-        </p>
-        <p>
-          A future of affordable housing is possible through action— we hope you
-          continue your journey.
-        </p> -->
     </div>
   </div>
   <!-- bunch of stuff i need to fix but haven't gotten to  -->
@@ -778,12 +772,14 @@
 
   <div class="blank"></div>
   <div class="footer">
-    <p style="text-align: center;">
-      <a href="about.html">About</a> | <a href="sources.html">Sources &
-        Methods</a> | <a href="#introduction">Back to Top</a>
+    <p style="text-align: center">
+      <a href="about.html">About</a> |
+      <a href="sources.html">Sources & Methods</a> |
+      <a href="#introduction">Back to Top</a>
     </p>
-    Visualizing the Housing Crisis is a capstone project for Masters of Information Management at the School
-    of Information, University of California, Berkeley.
+    Visualizing the Housing Crisis is a capstone project for Masters of
+    Information Management at the School of Information, University of
+    California, Berkeley.
   </div>
 
   <script src="staticFiles/js/script.js"></script>
