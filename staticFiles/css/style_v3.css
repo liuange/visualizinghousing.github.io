@@ -39,6 +39,7 @@ h4 {
 :root {
   --blue: #627c8d;
   --skyblue: #b7e1f2;
+  --gray-blue: #dde6ed;
   --red: #a73838;
   --green: #739c7e;
   --mediumgreen: #577560;
@@ -85,7 +86,7 @@ p {
   height: auto;
 }
 
-a:visited {
+a {
   color: var(--blue);
 }
 
@@ -480,10 +481,11 @@ button:hover {
 }
 
 .footer {
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #dde6ed;
+  background-color: var(--gray-blue);
   text-align: center;
   margin-top: 0px;
   padding-top: 30px;
