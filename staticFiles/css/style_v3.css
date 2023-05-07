@@ -360,6 +360,9 @@ a {
   padding: 0;
   margin: 0;
 }
+#historys{
+  margin-left:200px;
+}
 
 /* Eviction */
 .evc_section_narrow {
@@ -371,18 +374,7 @@ a {
   column-gap: 5vw;
 }
 
-/* .evccontent_narrow {
-  grid-column: 1/2;
-  height: 100%;
-}
-.content_narrow p {
-  text-align: justify;
-}
-.image_box_med {
-  grid-column: 2/3;
-  height: 100%;
-  width: 100%;
-} */
+
 
 
 /* How did we get here? Let's Go Back in Time */
