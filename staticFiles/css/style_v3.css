@@ -1,7 +1,7 @@
 /* overall styles */
 
 html * {
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -20,16 +20,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 35px;
   font-weight: 700;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 h3 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -56,7 +56,7 @@ h4 {
 }
 
 .emphasis_p {
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", serif;
   text-align: left;
   margin-bottom: 20px;
   color: var(--blue);
@@ -66,7 +66,7 @@ h4 {
 }
 
 p {
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 18px;
   text-align: justify;
   line-height: 1.6;
@@ -146,16 +146,17 @@ a {
   justify-content: center;
 }
 .content_center {
-  width: 55vw;
+  width: 60vw;
   text-align: justify;
+  text-align-last: left;
 }
-.center_section p {
-  text-align: center;
-}
+
 .content_center h1,
 .content_center h2,
 .content_center h3 {
   text-align: center;
+  text-align-last: center;
+
 }
 
 .content_med {
@@ -365,28 +366,15 @@ a {
 }
 
 /* Test */
-.curtain {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./staticFiles/images/next_steps/curtain.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: top 0.3s ease-in-out;
-}
 
-#foreground {
-  z-index: 2;
-  position: absolute;
-  height: 75vh;
+#next_steps{
+  height:960px;
 }
 
 #background {
   z-index: 1;
   position: absolute;
-  height: 75vh;
+  height: 960px;
 }
 
 #ns_image_box {
@@ -395,66 +383,105 @@ a {
   justify-content: center;
 }
 
-.test {
+.curtain {
   position: absolute;
   z-index: 3;
-  height: 100%;
-  top: -3px;
-  left: -11px;
+  height: 158px;
+  top: -2px;
   transition: top 0.3s ease-in-out;
 }
 
-.window:hover .test {
-  top: -180px;
+.window:hover .curtain {
+  top: -160px;
+  transition: top 0.3s ease-in-out;
 }
 .window {
   position: absolute;
   z-index: 4;
-  height: 131px;
-  width: 106px;
-  display: flex;
-  align-items: center;
-  border: black solid;
-  overflow-y: hidden;
-  top: 328px;
-  left: -200px;
-}
-#decor {
-  position: absolute;
-  z-index: 5;
-  height: 20vh;
-  top: 0px;
-  left: 0px;
+  height: 166px;
+  width: 126px;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+  /* border: black solid; */
+  overflow: hidden;
 }
 
-button {
-  margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 3px solid #f04a49;
-  color: #f04a49;
-  font-size: 25px;
-  padding: 10px 20px;
+#w1{
+  top:428px;
+  left:-244px;
 }
 
-button:hover {
-  background-color: #f04a49;
-  color: #fff;
-  border: 3px solid #f04a49;
-  transition: all 0.3s ease 0s;
+#w2{
+  top:428px;
+  left:-64px;
 }
 
+#w3{
+  top:428px;
+  left:115px;
+}
+
+#w4{
+  top:685px;
+  left:-244px;
+}
+
+#w5{
+  top:685px;
+  left:-63px;
+}
+
+.decor{
+  position:absolute;
+  z-index:5;
+  height:52px;
+}
+#d1{
+  top:549px;
+  left:-262px;
+}
+#d2{
+  top:549px;
+  left:-78px;
+}
+
+#d3{
+  top:549px;
+  left:100px;
+}
+
+#d4{
+  top:806px;
+  left:-262px;
+}
+
+#d5{
+  top:806px;
+  left:-78px;
+}
+
+#decor1{
+  position:absolute;
+  z-index:5;
+  height:30px;
+  top:316px;
+  left:-136px;
+}
+
+/* popup */
 .popup {
   display: none;
   position: fixed;
   padding: 10px;
-  width: 280px;
+  width: 400px;
   left: 50%;
-  margin-left: -150px;
-  height: 180px;
+  margin-left: -200px;
+  height: fit-content;
   top: 50%;
   margin-top: -100px;
-  background: #fff;
-  border: 3px solid #f04a49;
+  background: var(--white);
+  border: 3px solid var(--blue);
   z-index: 20;
 }
 
@@ -465,7 +492,7 @@ button:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   z-index: -2;
 }
 
@@ -476,10 +503,30 @@ button:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #fff;
+  background: #FFF;
   z-index: -1;
 }
 
+button {
+    background-color: var(--white);
+    color:var(--gray-dark);
+    border:none;
+    font-size: 14px;
+    width:134px;
+    height:170px;
+    line-height:1.5;
+    
+}
+
+button:hover {
+    background-color: var(--gray-blue);
+    color:var(--dark);
+    /* border: 3px solid var(--skyblue); */
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+/* footer */
 .footer {
   position: static;
   left: 0;
