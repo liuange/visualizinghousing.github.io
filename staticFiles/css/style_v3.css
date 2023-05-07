@@ -511,6 +511,22 @@ a {
   border: 3px solid var(--blue);
   z-index: 20;
 }
+.popup h3{
+  text-align:center;
+}
+.popup p{
+  padding-left:10px;
+  text-align:left;
+}
+.close{
+  text-align:center !important;
+}
+.links{
+  margin-top:0;
+  padding-top:0;
+  margin-bottom:0;
+  padding-bottom:0;
+}
 
 #popup:after {
   position: fixed;
