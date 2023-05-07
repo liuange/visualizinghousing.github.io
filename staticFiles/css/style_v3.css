@@ -65,6 +65,16 @@ h4 {
   font-weight: 700;
 }
 
+.emphasis_red {
+  font-family: "Libre Baskerville", sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--red);
+  padding-top: 2%;
+  padding-bottom: 0;
+  font-weight: 700;
+}
+
 p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 18px;
