@@ -645,39 +645,188 @@
   </div>
   <!-- bunch of stuff i need to fix but haven't gotten to  -->
 
-  <!-- <div class="popup" id="popup">
-      <p>This is a popup!</p>
-      <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
-      <p>Website will still remain visible behind this popup.</p>
-      <a href="#popup" onclick="hide('popup')">Close</a>
-    </div> -->
+  <div id="popups">
+    <div class="popup" id="popup1">
+      <p>Share this works!</p>
+      <p>We believe knowledge is power and can lead to positive change.</p>
+      <a href="#popup" onclick="hide('popup1')">Close</a>
+    </div>
 
-  <div id="next_steps" class="center_section" style="height: 70vh">
+    <div class="popup" id="popup2">
+      <p>Keep learning about housing</p>
+      <p>
+        The best way to support your action is to keep informed. You can
+        engage with similar educational materials
+      </p>
+      <p><a href="https://antievictionmap.com/about-the-aemp">AEMP</a></p>
+      <a href="#popup2" onclick="hide('popup2')">Close</a>
+    </div>
+
+    <div class="popup" id="popup3">
+      <p>Connect with a nonprofit</p>
+      <p>
+        There are numerous organizations you can support and volunteer with to
+        help those impacted by the Affordable Housing Crisis. The list below
+        is some local to the Richmond area.
+      </p>
+      <p>
+        <a href="https://www.richmondland.org/get-involved">RichmondLand</a>
+      </p>
+      <p>
+        <a href="https://richmondnhs.org/"
+          >Richmond Neighborhood Housing Services</a
+        >
+      </p>
+      <p><a href="https://baylegal.org/">Bay Area Legal Aid</a></p>
+
+      <a href="#popup3" onclick="hide('popup3')">Close</a>
+    </div>
+
+    <div class="popup" id="popup4">
+      <p>Be politically involved</p>
+      <p>
+        So much of this crisis is enforced by policy. Your vote on zoning
+        laws, and other housing related policy matters—getting politically
+        involved is a way to shape the future. Here is a list of resources for
+        to understand and protect housing rights.
+      </p>
+      <a href="#popup4" onclick="hide('popup4')">Close</a>
+    </div>
+
+    <div class="popup" id="popup5">
+      <p>Get to know Richmond</p>
+      <p>
+        Understand the city's vis-a-vis housing by learning about it's rich
+        history. Here are a few options.
+      </p>
+      <p>
+        Take the
+        <a href="https://eastbayyesterday.com/"
+          >East Bay Yesterday walking tour</a
+        >.
+      </p>
+      <p>
+        Visit the
+        <a href="https://richmondmuseum.org/"
+          >Richmond Museum of History & Culture</a
+        >.
+      </p>
+      <a href="#popup5" onclick="hide('popup5')">Close</a>
+    </div>
+  </div>
+
+  <div id="next_steps" class="center_section">
     <section>
       <div class="square sq1">
         <div id="ns_image_box">
-          <!-- <object
+          <div>
+            <object
               type="image/svg+xml"
-              data="staticFiles/images/next_steps/decor.svg"
-              id="decor"
-            ></object> -->
-          <!-- <div class="window">
+              data="./staticFiles/images/next_steps/decor1.svg"
+              class="decor"
+              id="d1"
+            ></object>
+            <div class="window" id="w1">
               <object
                 type="image/svg+xml"
-                data="staticFiles/images/next_steps/curtain.svg"
-                class="test"
+                data="./staticFiles/images/next_steps/curtain.svg"
+                class="curtain"
+                id="c1"
               ></object>
-              <button class="button" href="#" onclick="show('popup')">
-                Button
+              <button class="button" href="#" onclick="show('popup1')">
+                Share this work
               </button>
-            </div> -->
-          <object type="image/svg+xml" data="staticFiles\images\next_steps\foreground.svg" id="foreground"></object>
+            </div>
+          </div>
 
-          <img src="staticFiles\images\next_steps\background.svg" id="background" />
+          <div>
+            <object
+              type="image/svg+xml"
+              data="./staticFiles/images/next_steps/decor2.svg"
+              class="decor"
+              id="d2"
+            ></object>
+            <div class="window" id="w2">
+              <object
+                type="image/svg+xml"
+                data="./staticFiles/images/next_steps/curtain.svg"
+                class="curtain"
+                id="c2"
+              ></object>
+              <button class="button" href="#" onclick="show('popup2')">
+                Keep learning about housing
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <object
+              type="image/svg+xml"
+              data="./staticFiles/images/next_steps/decor3.svg"
+              class="decor"
+              id="d3"
+            ></object>
+            <div class="window" id="w3">
+              <object
+                type="image/svg+xml"
+                data="./staticFiles/images/next_steps/curtain.svg"
+                class="curtain"
+                id="c3"
+              ></object>
+              <button class="button" href="#" onclick="show('popup3')">
+                Connect with a nonprofit
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <object
+              type="image/svg+xml"
+              data="./staticFiles/images/next_steps/decor4.svg"
+              class="decor"
+              id="d4"
+            ></object>
+            <div class="window" id="w4">
+              <object
+                type="image/svg+xml"
+                data="./staticFiles/images/next_steps/curtain.svg"
+                class="curtain"
+                id="c4"
+              ></object>
+              <button class="button" href="#" onclick="show('popup4')">
+                Be politically involved
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <object
+              type="image/svg+xml"
+              data="./staticFiles/images/next_steps/decor4.svg"
+              class="decor"
+              id="d5"
+            ></object>
+            <div class="window" id="w5">
+              <object
+                type="image/svg+xml"
+                data="./staticFiles/images/next_steps/curtain.svg"
+                class="curtain"
+                id="c5"
+              ></object>
+              <button class="button" href="#" onclick="show('popup5')">
+                Get to know Richmond
+              </button>
+            </div>
+          </div>
+          <img
+            src=".\staticFiles\images\next_steps\background-13.svg"
+            id="background"
+          />
         </div>
       </div>
     </section>
   </div>
+
   <div class="blank"></div>
   <div class="footer">
     <p style="text-align: center;">
